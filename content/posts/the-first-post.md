@@ -1,6 +1,6 @@
 ---
 title: "Hello World: Welcome to Tzib Website"
-date: 2025-08-20T10:00:00+05:30
+date: 2026-05-02T10:00:00+05:30
 draft: false
 description: "A post to invite to explain some things about Tzib Project and invite people to colaborate and be part of the project."
 author: "Pablo García"
