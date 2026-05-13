@@ -3,6 +3,13 @@ locale = 'en-us'
 title = 'Tzib Project Website'
 theme = 'explore'
 
+
+[params]
+[params.sidebar]
+  globalPosition = "left"
+  widgets = ["recent", "categories", "tags"]
+  recentCount = 5
+  
 [languages]
 [languages.en]
   languageName = 'English'
