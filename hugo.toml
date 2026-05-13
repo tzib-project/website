@@ -2,3 +2,18 @@ baseURL = 'https://tzib-project.github.io/website/'
 locale = 'en-us'
 title = 'Tzib Project Website'
 theme = 'explore'
+
+[languages]
+[languages.en]
+  languageName = 'English'
+  contentDir = 'content/en'
+  label = 'English'
+  title = 'In English'
+  weight = 1
+
+[languages.es]
+  languageName = 'Español'
+  contentDir = 'content/es'
+  label = 'Español'
+  title = 'En Español'  
+  weight = 2
