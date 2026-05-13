@@ -36,6 +36,14 @@
           {{ partial "icons/search.html" }}
         </a>
         {{ end }}
+        {{ if gt (len .Site.Languages) 1 }}
+        <div class="language-switcher">
+          {{ range $index, $lang := .Site.Languages }}
+          {{ $url := printf "/website/%s/" $lang.Lang | relURL }}
+          <a href="{{ if eq $lang.Lang $.Site.Language.Lang }}{{ "/" | relURL }}{{ else }}{{ $url }}{{ end }}" class="language-link{{ if eq $lang.Lang $.Site.Language.Lang }} active{{ end }}">{{ $lang.LanguageName }}</a>{{ if lt (add $index 1) (len $.Site.Languages) }}<span class="language-separator">|</span>{{ end }}
+          {{ end }}
+        </div>
+        {{ end }}
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" aria-pressed="false">
           {{ partial "icons/sun.html" }}
           {{ partial "icons/moon.html" }}

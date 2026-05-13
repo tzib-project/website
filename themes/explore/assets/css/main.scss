@@ -819,6 +819,29 @@ kbd {
   border-left: var(--border-width) solid var(--color-border);
 }
 
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.language-link {
+  color: var(--color-text-offset);
+  text-decoration: none;
+  transition: color var(--transition-duration) ease;
+  font-size: var(--text-sm);
+}
+
+.language-link:hover,
+.language-link.active {
+  color: var(--color-primary);
+}
+
+.language-separator {
+  color: var(--color-text-offset);
+  user-select: none;
+}
+
 .nav-rss,
 .nav-search {
   color: var(--color-text-offset);
